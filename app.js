@@ -38,6 +38,10 @@ $('#anotherBtn').on("click", function (e) {
 
         $(this).css('color', randomColor)
     })
+    
+    $('li').dblclick(function () {
+        $('li').remove();
+    });
 });
 
 
