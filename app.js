@@ -8,6 +8,8 @@ function add() {
     //$("body").append("<div><h2>" + $("#textType").val() + "</h2></div>");
 
 }
+// comment out for one of the steps: 
+
 /*function add2 () {
     $('h2').mouseover(function () {
         $('h2').css({
@@ -17,19 +19,9 @@ function add() {
     })
 }*/
 
-/*let colors = ['red', 'orange', 'yellow', 'blue', 'green', 'purple'];
-function getRandomColors () {
-    let random = colors[Math.floor(Math.random() * colors.length)];
-    $('li').css('color', colors[random]);
-};*/
-
-
-/*function setRandomColors() {
-    $('li').css('color', getRandomColors())
-}*/
-
 $('#anotherBtn').on("click", function (e) {
     add();
+    //add2();
     e.preventDefault();
 
     $('li').click(function () {
@@ -38,19 +30,11 @@ $('#anotherBtn').on("click", function (e) {
 
         $(this).css('color', randomColor)
     })
-    
+
     $('li').dblclick(function () {
         $('li').remove();
     });
 });
-
-
-
-/*$('.li').on('click', function(e) {
-    var random = Math.floor(Math.random() * colors.length);
-    $('.li').css('color', colors[random]);
-    e.preventDefault();
-})*/
 
 //button is disabled by default
 $('#anotherBtn').attr('disabled', true);
@@ -69,3 +53,20 @@ $('li').dblclick(function () {
     $('li').remove();
 });
 
+// junk code: 
+
+/*let colors = ['red', 'orange', 'yellow', 'blue', 'green', 'purple'];
+function getRandomColors () {
+    let random = colors[Math.floor(Math.random() * colors.length)];
+    $('li').css('color', colors[random]);
+};
+
+function setRandomColors() {
+    $('li').css('color', getRandomColors())
+}*/
+
+/*$('.li').on('click', function(e) {
+    var random = Math.floor(Math.random() * colors.length);
+    $('.li').css('color', colors[random]);
+    e.preventDefault();
+})*/
